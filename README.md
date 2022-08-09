@@ -7,3 +7,5 @@ With the list of all the students' preferences, the university has to make the b
 This situation can be modeled by a graph coloring problem. The vertices are the curses and the edges represent that between two courses there is at least one student in common, and the colors represent the possible schedules. Therefore, two adjacent vertices cannot have the same color, otherwise, it means that the two courses would happen at the same time, despite having students in common.
 
 
+## Solution
+To create the graph let's use the Neo4J Graph Database. The files `.cypher` have the queries to create the graphs with 10 and 100 courses, this way we can test the algoritm on a larger graph. 
