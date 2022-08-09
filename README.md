@@ -11,3 +11,10 @@ This situation can be modeled by a graph coloring problem. The vertices are the 
 To create the graph let's use the Neo4J Graph Database. The files `.cypher` have the queries to create the graphs with 10 and 100 courses, this way we can test the algorithm on a larger graph. 
 Then we can use python with the libs `neo4j` and `pandas` to pull the graph into a jupyter notebook and create an adjacent matrix to store the graph in memory.
 
+### Heuristic 1
+This heurisc is the simplest possible, it just calculates the color of each vertice in the order they appear in the adjacent matrix.
+
+### Heuristic 2
+This one orders the vertices acording to their degree and calculates the color of each vertice in the decent order of their degree.
+
+Both heuristics came with a solutions, however the heuristic 2 was able able to use one less colors to solve the problem with 100 courses, which could save the university some mony, once that one less schedule. 
